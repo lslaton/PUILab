@@ -1,11 +1,11 @@
-/*setting up the grid*/
+/* Setting up the grid for Home and Product Info*/
 .grid{
     display: grid;
     grid-template: repeat(11, 75px) / repeat(13, 93px);
     grid-gap: 20px 20px;
 }
 
-/* setting up the Nav Bar*/
+/* Setting up the Nav Bar for all pages*/
 ul {
     list-style-type: none;
     margin: 0;
@@ -17,7 +17,7 @@ li {
     float: left;
 }
 
-/* Set position of logo and text in grid*/
+/* Set position of logo and text in Nav Bar*/
 .logo {
     grid-column: 2/span 3;
     grid-row: 1;
@@ -41,6 +41,7 @@ li {
     color: #FE938C;
 }
 
+/* Set up Nav Bar */
 .navBar{
     grid-column: 8 / 12;
     position: relative;
@@ -60,6 +61,18 @@ li {
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
+.nbItem{
+    display: flex;
+    margin: 10px;
+}
+
+.navBar {
+    display: flex;
+    justify-content: space-between;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 10px 0;
+}
 
 /* need to move up between grid rows*/
 #menuLine{
@@ -68,6 +81,7 @@ li {
     top: 92px;
 }
 
+/*----------*/
 ul {
     text-align: justify;
 }
@@ -87,11 +101,13 @@ li {
     top: 1.25em;
 }
 
-#headerImg{
+/*-------- */
+
+/* Home Page Content */
+
+.headerImg{
     width: 1216px;
     height: 265px;
-    left: 112px;
-    top: 190px;
 
     grid-row-start: 3;
     grid-column: 2 / 12;
@@ -166,120 +182,298 @@ li {
     color: #252323;
 }
 
-#locTitle, #hourTitle{
-    font-family: Amatic SC;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 64px;
-    line-height: 81px;
+
+
+/* Product Browsing Page */
+
+.gridPB{
+    display: grid;
+    grid-template: repeat(17, 75px) / repeat(13, 93px);
+    grid-gap: 20px 20px;
+}
+
+.menuHeader {
+    width: 100%;
+    height: 100%;
+    grid-column: 2 / span 11;
+    grid-row: 3 / span 2;
     text-align: center;
-    text-decoration-line: underline;
-    color: #F5BC3A;
-    top: 755px;
-
-}
-
-#locTitle{
-    position: absolute;
-    width: 316px;
-    height: 75px;
-    left: 326px;
-    top: 755px;
-}
-
-#locDetails{
-    position: absolute;
-    width: 337px;
-    height: 175px;
-    left: 316px;
-    top: 843px;
-}
-
-#hourTitle{
-    position: absolute;
-    width: 316px;
-    height: 75px;
-    left: 787px;
-    top: 758px;
-}
-
-#hourDetails{
-    position: absolute;
-    width: 319px;
-    height: 106px;
-    left: 786px;
-    top: 843px;
-}
-
-#locDetails, #hourDetails{
-    font-family: Oswald;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 36px;
-    line-height: 53px;
-    text-align: center;
-
-    color: #252323;
-}
-
-#menuHeader {
-    position: absolute;
-    width: 1216px;
-    height: 170px;
-    left: 112px;
-    top: 190px;
-
-    background: url(Menu_Header.jpg);
+    background: url("Menu_Header.jpg");
     border: 4px solid #252323;
     box-sizing: border-box;
     border-radius: 60px;
-}
-
-#menuTxt {
-    position: absolute;
-    width: 552px;
-    height: 121px;
-    left: 337px;
-    top: 19px;
-
-    font-family: Amatic SC;
-    font-style: normal;
+    text-align:center;
+    font-family: 'Amatic SC';
     font-weight: bold;
-    font-size: 96px;
-    line-height: 121px;
-    /* identical to box height */
-
-    display: flex;
+    font-size: 48px;
+    line-height: 0;
     align-items: center;
     text-align: center;
-
     color: #FE938C;
 }
 
-.prodImg {
-    position: absolute;
-    width: 317px;
-    height: 265px;
-    left: 112px;
-    top: 475px;
 
-    background: url(original.jpg);
+.prodImg{
+    width: 100%;
+    height: 100%;
     border: 2px solid #252323;
     box-sizing: border-box;
     border-radius: 60px;
 }
 
-.grid{
-    display: grid;
-    grid-template: 1fr 1fr / 1fr 1fr 1fr;
-    height: 1500px;
-    width: 1440px;
-    top: 95px;
-    grid-gap: 114px 130px;
-    border: 2px blue solid;
+.orig{
+    grid-column: 2 / span 3;
+    grid-row: 6 / span 3;
+    background: url("original.jpg");
 }
 
-.original{
-    grid-row-start: 1;
-    grid-column-start: 1;
+.origGF{
+    grid-column: 2 / span 3;
+    grid-row: 10 / span 3;
+    background: url("origGF.jpg");
+}
+
+.blackberry{
+    grid-column: 2 / span 3;
+    grid-row: 14 / span 3;
+    background: url("blackberry.jpg");
+}
+
+.caramelPecan{
+    grid-column: 8 / span 3;
+    grid-row: 6 / span 3;
+    background: url("caramelPecan.jpg");
+}
+
+.pumpkinSpice{
+    grid-column: 8 / span 3;
+    grid-row: 10 / span 3;
+    background: url("pumpkinSpice.jpg");
+}
+
+.walnut{
+    grid-column: 8 / span 3;
+    grid-row: 14 / span 3;
+    background: url("walnut.jpg");
+}
+
+.prodName{
+    font-family: Amatic SC;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 81px;
+    display: flex;
+    align-items: center;
+    text-decoration-line: underline;
+
+    color: #F5BC3A;
+}
+
+.origTxt{
+    grid-column: 5 / span 3;
+    grid-row: 6 / span 3
+}
+
+.origGFTxt{
+    grid-column: 5 / span 3;
+    grid-row: 10 / span 3;
+}
+
+.blackberryTxt{
+    grid-column: 5 / span 3;
+    grid-row: 14 / span 3;
+}
+
+.caramelPecanTxt{
+    grid-column: 11 / span 3;
+    grid-row: 6 / span 3;
+}
+
+.pumpkinSpiceTxt{
+    grid-column: 11 / span 3;
+    grid-row: 10 / span 3;
+}
+
+.walnutTxt{
+    grid-column: 11 / span 3;
+    grid-row: 14 / span 3;
+}
+
+.prodPrice{
+    font-family: Oswald;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 53px;
+    display: flex;
+    align-items: center;
+
+    color: #252323;
+}
+
+.origPrice{
+    grid-column: 5 / span 3;
+    grid-row: 7 / span 3
+}
+
+.origGFPrice{
+    grid-column: 5 / span 3;
+    grid-row: 11 / span 3;
+}
+
+.blackberryPrice{
+    grid-column: 5 / span 3;
+    grid-row: 15 / span 3;
+}
+
+.caramelPecanPrice{
+    grid-column: 11 / span 3;
+    grid-row: 7 / span 3;
+}
+
+.pumpkinSpicePrice{
+    grid-column: 11 / span 3;
+    grid-row: 11 / span 3;
+}
+
+.walnutPrice{
+    grid-column: 11 / span 3;
+    grid-row: 15 / span 3;
+}
+
+
+/* Product Detail Page */
+.back{
+    grid-column: 2;
+    grid-row: 3;
+    font-family: Oswald;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 27px;
+    display: flex;
+    align-items: center;
+    color: #252323;
+}
+
+.cpImg {
+    width: 100%;
+    height: 100%;
+    background: url(cpImgLarge.png);
+    border: 2px solid #252323;
+    box-sizing: border-box;
+    border-radius: 60px;
+    grid-column: 3 / span 5;
+    grid-row: 3 / span 5;
+}
+
+.desc{
+    font-family: Oswald;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 36px;
+    color: #252323;
+    grid-column: 3 / span 5;
+    grid-row: 8 / span 3;
+}
+
+.caramelPecanName{
+    font-family: Amatic SC;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 72px;
+    line-height: 91px;
+    display: flex;
+    align-items: center;
+    color: #FE938C;
+    grid-column: 8 / span 4;
+    grid-row: 3 / span 2;
+}
+
+.options{
+    font-family: Oswald;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 53px;
+    display: flex;
+    align-items: center;
+    color: #252323;
+    grid-column: 8;
+}
+
+.quantity{
+    grid-row: 5;
+}
+
+.glaze{
+    grid-row: 6;
+}
+
+.delivery{
+    grid-row: 7;
+}
+
+/* Dropdown Button */
+
+.btnQty, .btnGlaze, .btnDelivery {
+    width: 100%;
+    height: 100%;
+    background: #F5BC3A;
+    border-radius: 15px;
+    font-family: Oswald;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 36px;
+    color: #252323;
+}
+
+.btnQty{
+    grid-row: 5;
+}
+
+.btnGlaze{
+    grid-row: 6;
+}
+
+.btnDelivery{
+    grid-row: 7;
+}
+
+.onebtn, .none, .pickupbtn{
+    grid-column-start: 9;
+}
+
+.threebtn, .sugarmilk, .deliverybtn{
+    grid-column-start: 10;
+    filter: opacity(50%);
+}
+
+.sixbtn, .vanillamilk{
+    grid-column-start: 11;
+    filter: opacity(50%);
+}
+
+.twelvebtn, .doublechoc{
+    grid-column-start: 12;
+    filter: opacity(50%);
+}
+
+.addToCart{
+    width: 100%;
+    height: 100%;
+    background: #FE938C;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 37.5px;
+    grid-column: 9 / span 4;
+    grid-row: 9;
+    font-family: Oswald;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 71px;
+    color: #252323;
 }

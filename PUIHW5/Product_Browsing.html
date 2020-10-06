@@ -2,38 +2,68 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Menu- Bun Bun Bake Shop</title>
+    <title>Bun Bun Bake Shop- Menu</title>
     <link href="bbStylesheet.css" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Amatic SC' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
 </head>
 <body>
-    <ul id="navBar">
-        <li id="logoText"><a href="Home_Page.html">Bun Bun Bake Shop</a></li>
-        <li id="logoImage"><a href="Home_Page.html"><img src="BBlogo.png" alt="bread"></a></li>
-        <li id="homeIcon"><a href="Home_Page.html"><img src="homeIcon.png" alt="home"></a></li>
-        <li id="home"><a href="Home_Page.html">Home</a></li>
-        <li id="menuIcon"><a href="Product_Browsing.html"><img src="menuIcon.png" alt="utensils"></a></li>
-        <li id="menu"><a href="Product_Browsing.html">Menu</a></li>
-        <li id="cartIcon"><img src="cartIcon.png" alt="checkbox"></li>
-        <li id="cart">Cart</li>
-        <li id="aboutUsIcon"><img src="aboutUsIcon.png" alt="star"></li>
-        <li id="aboutUs">About Us</li>
-    </ul>
-    <div id="menuLine">
-        <img src="Line%2012.png" alt="yellow line"> <!--https://www.w3schools.com/tags/tag_hr.asp-->
-    </div>
-
-    <div id="menuHeader">
-        <h2 id="menuTxt">Menu</h2>
-    </div>
-
-    <div class="grid">
-        <div class="original">
-           <img src="original.jpg" alt="original cinnamon rolls">
-            <h2 class="prodTitle">Original</h2>
-            <h3 class="prodPrice">$4.00</h3>
+<!-- Grid container -->
+    <div class="gridPB">
+        <div class="logo"> <!-- Logo and Name of Bakery -->
+            <h1 class="logoText">Bun Bun Bake Shop</h1>
+            <img src="BBlogo.png" alt="bread and pastries" class="logoImg">
         </div>
+
+        <div class="navBar"> <!-- navigation menu for pages; need to distribute on horizontal axis -->
+            <ul id="navBar">
+                <li id="homeIcon"><a href="Home_Page.html"><img src="homeIcon.png" alt="home"></a></li>
+                <li class="nbTxt"><a href="Home_Page.html">Home</a></li>
+                <li id="menuIcon"><a href="Product_Browsing.html"><img src="menuIcon.png" alt="utensils"></a></li>
+                <li class="nbTxt"><a href="Product_Browsing.html">Menu</a></li>
+                <li id="cartIcon"><img src="cartIcon.png" alt="checkbox"></li>
+                <li class="nbTxt">Cart</li>
+                <li id="aboutUsIcon"><img src="aboutUsIcon.png" alt="star"></li>
+                <li class="nbTxt">About Us</li>
+            </ul>
+        </div>
+
+        <div id="menuLine"> <!-- separate Nav Bar from content on page -->
+            <img src="Line%2012.png" alt="yellow line">
+        </div>
+
+    <!-- Menu Header Image and Text -->
+        <div class="menuHeader">
+            <!--img src="Menu_Header.jpg" alt="white paper with gold clip">-->
+            <!-- <div class="headerTxt"> -->
+                <h2 id="menuHeaderTxt">Menu</h2>
+            <!--</div>-->
+        </div>
+
+        <!-- Product Time -->
+        <!-- Product Images first -->
+        <div class="prodImg orig"></div>
+        <div class="prodImg origGF"></div>
+        <div class="prodImg blackberry"></div>
+        <div class="prodImg caramelPecan"></div>
+        <div class="prodImg pumpkinSpice"></div>
+        <div class="prodImg walnut"></div>
+
+        <!-- Product Names next -->
+        <div class="prodName origTxt">Original</div>
+        <div class="prodName origGFTxt">Original (GF)</div>
+        <div class="prodName blackberryTxt">Blackberry</div>
+        <div class="prodName caramelPecanTxt"><a href="Product%20Info.html">Caramel Pecan</a> </div>
+        <div class="prodName pumpkinSpiceTxt">Pumpkin Spice</div>
+        <div class="prodName walnutTxt">Walnut</div>
+
+        <!-- and finally, Product Prices -->
+        <div class="prodPrice origPrice">$4.00</div>
+        <div class="prodPrice origGFPrice">$4.00</div>
+        <div class="prodPrice blackberryPrice">$4.50</div>
+        <div class="prodPrice caramelPecanPrice">$4.50</div>
+        <div class="prodPrice pumpkinSpicePrice">$4.50</div>
+        <div class="prodPrice walnutPrice">$4.50</div>
     </div>
 
 </body>
