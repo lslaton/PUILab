@@ -2,48 +2,63 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Bun Bun Bake Shop</title>
-    <link href="bbStylesheet.css" rel="stylesheet" type="text/css">
+    <title>test-grid</title>
+    <link href="test_grid_style.css" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Amatic SC' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
 </head>
 <body>
-    <ul id="navBar">
-        <li id="logoText"><a href="Home_Page.html">Bun Bun Bakery</a></li>
-        <li id="logoImage"><a href="Home_Page.html"><img src="BBlogo.png" alt="bread"></a></li>
-        <li id="homeIcon"><a href="Home_Page.html"><img src="homeLogo.png" alt="home"></a></li>
-        <li id="home"><a href="Home_Page.html">Home</a></li>
-        <li id="menuIcon"><a href="Product_Browsing.html"><img src="menuIcon.png" alt="utensils"></a></li>
-        <li id="menu"><a href="Product_Browsing.html">Menu</a></li>
-        <li id="cartIcon"><img src="cartIcon.png" alt="checkbox"></li>
-        <li id="cart">Cart</li>
-        <li id="aboutUsIcon"><img src="aboutUsIcon.png" alt="star"></li>
-        <li id="aboutUs">About Us</li>
-    </ul>
-    <hr>  <!--https://www.w3schools.com/tags/tag_hr.asp-->
+    <!-- Grid container -->
+    <div class="grid">
+        <div class="logo"> <!-- Logo and Name of Bakery -->
+            <h1 class="logoText">Bun Bun Bake Shop</h1>
+            <img src="BBlogo.png" alt="bread and pastries" class="logoImg">
+        </div>
 
-    <img src="header.jpg" alt="cinnamon buns in pan"> <!-- need to crop -->
+        <div class="navBar"> <!-- navigation menu for pages; need to distribute on horizontal axis -->
+         <ul id="navBar">
+                <li id="homeIcon"><a href="Home_Page.html"><img src="homeIcon.png" alt="home"></a></li>
+                <li class="nbTxt"><a href="Home_Page.html">Home</a></li>
+                <li id="menuIcon"><a href="Product_Browsing.html"><img src="menuIcon.png" alt="utensils"></a></li>
+                <li class="nbTxt"><a href="Product_Browsing.html">Menu</a></li>
+                <li id="cartIcon"><img src="cartIcon.png" alt="checkbox"></li>
+                <li class="nbTxt">Cart</li>
+                <li id="aboutUsIcon"><img src="aboutUsIcon.png" alt="star"></li>
+                <li class="nbTxt">About Us</li>
+            </ul>
+        </div>
 
-    <div id="leftImg">
-        <img src="BBlogo.png" alt="bread">
-        <hr>
-    </div>
+        <div id="menuLine"> <!-- separate Nav Bar from content on page -->
+            <img src="Line%2012.png" alt="yellow line">
+        </div>
 
-    <div id="rightImg">
-        <img src="BBlogo.png" alt="bread">
-        <hr>
-    </div>
+    <!--Header Image-->
+        <div id="headerImg"></div>
+
+    <!-- Left and Right Images -->
+        <div id="leftImg">
+            <img src="Bread%202.png" alt="bread">
+            <img src="Line%2014.png" alt="line">
+         </div>
+
+        <div id="rightImg">
+            <img src="Bread%201.png" alt="bread">
+            <img src="Line%2014.png" alt="line">
+        </div>
 
     <h1 id="Welcome">Welcome to Bun Bun Bake Shop</h1>
 
-    <div id="locInfo">
-        <h2 class="subheading">Location</h2>
-        <h3 class="details">5000 Forbes Avenue<br>Pittsburgh, PA 15213</h3>
+    <div class="location">
+        <h2 class="subtitle">Location</h2>
+        <h3 class="detail">500 Forbes Avenue<br>Pittsburgh, PA 15213</h3>
+        <p id="delivery">Delivery available to Pittsburgh Residents</p>
     </div>
 
-    <div id="hourInfo">
-        <h2 class="subheading">Hours</h2>
-        <h3 class="details">Mon-Fri: 9am-5pm<br>Sat-Sun: 10am-5pm</h3>
+    <div class="hour">
+        <h2 class="subtitle">Hours</h2>
+        <h3 class="detail">Mon-Fri: 9am-5pm<br>Sat-Sun: 10am-5pm</h3>
     </div>
+</div>
+
 </body>
 </html>
