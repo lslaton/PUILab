@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bun Bun Bake Shop- Menu</title>
+    <link href="bbStylesheet.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Amatic SC' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
+</head>
+<body>
+<!-- Grid container -->
+<div class="grid">
+    <div class="logo"> <!-- Logo and Name of Bakery -->
+        <h1 class="logoText">Bun Bun Bake Shop</h1>
+        <img src="BBlogo.png" alt="bread and pastries" class="logoImg">
+    </div>
+
+    <div class="navBar"> <!-- navigation menu for pages; need to distribute on horizontal axis -->
+        <ul id="navBar">
+            <li id="homeIcon"><a href="Home_Page.html"><img src="homeIcon.png" alt="home"></a></li>
+            <li class="nbTxt"><a href="Home_Page.html">Home</a></li>
+            <li id="menuIcon"><a href="Product_Browsing.html"><img src="menuIcon.png" alt="utensils"></a></li>
+            <li class="nbTxt"><a href="Product_Browsing.html">Menu</a></li>
+            <li id="cartIcon"><img src="cartIcon.png" alt="checkbox"></li>
+            <li class="nbTxt">Cart</li>
+            <li id="aboutUsIcon"><img src="aboutUsIcon.png" alt="star"></li>
+            <li class="nbTxt">About Us</li>
+        </ul>
+    </div>
+
+    <div id="menuLine"> <!-- separate Nav Bar from content on page -->
+        <img src="Line%2012.png" alt="yellow line">
+    </div>
+
+    <!-- Back Button -->
+    <div class="back">
+        <img src="back.jpg" alt="pink back arrow">
+        <p>Back</p>
+    </div>
+
+    <!-- Product Image and Description-->
+    <div class="cpImg"></div>
+    <div class="desc"><p>You get the best of both worlds with this sweet and salty
+        combo. The caramel-and-cinnamon-flavored dough is sprinkled with pecan crumbles
+        for the perfect mix of flavors and texture.</p></div>
+
+    <!-- Product Name and Options -->
+    <div class="caramelPecanName"><h4>Caramel Pecan Cinnamon Roll</h4></div>
+
+    <div class="options quantity"><h5>Quantity:</h5></div>
+    <div class="options glaze"><h5>Glaze:</h5></div>
+    <div class="options delivery"><h5>Delivery:</h5></div>
+
+    <!-- Now for the fun part- Quantity Buttons -->
+        <button class="btnQty onebtn">1 Roll- $4.50</button>
+        <button class="btnQty threebtn">3 Rolls- $10.00</button>
+        <button class="btnQty sixbtn">6 Rolls- $20.00</button>
+        <button class="btnQty twelvebtn">12 Rolls- $34.00</button>
+
+    <!-- Glaze Buttons -->
+        <button class="btnGlaze none">None</button>
+        <button class="btnGlaze sugarmilk">Sugar-Milk</button>
+        <button class="btnGlaze vanillamilk">Vanilla-Milk</button>
+        <button class="btnGlaze doublechoc">Double-Chocolate</button>
+
+    <!-- Delivery Buttons -->
+        <button class="btnDelivery pickupbtn">In-Store Pickup</button>
+        <button class="btnDelivery deliverybtn">Delivery</button>
+
+    <!-- Add to Cart Button -->
+        <button class="addToCart">Add To Cart</button>
+    </div>
+</body>
+</html>
